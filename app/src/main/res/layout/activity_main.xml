@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nominho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nota P1"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/nominho"
+        app:layout_constraintTop_toBottomOf="@+id/nominho" />
+
+    <EditText
+        android:id="@+id/pr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Nota P2"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/pr1"
+        app:layout_constraintTop_toBottomOf="@+id/pr1" />
+
+    <EditText
+        android:id="@+id/freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Frequência"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/pr2"
+        app:layout_constraintTop_toBottomOf="@+id/pr2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:onClick="chama"
+        android:text="Situação Final"
+        app:layout_constraintEnd_toEndOf="@+id/freq"
+        app:layout_constraintTop_toBottomOf="@+id/freq" />
+</androidx.constraintlayout.widget.ConstraintLayout>
